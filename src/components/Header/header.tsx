@@ -51,19 +51,19 @@ const Header = () => {
           <Image src={Logo} alt="Logo" width={300} height={70} className={` max-sm1:max-w-[140px] cursor-pointer object-contain h-[40px] transform-transition ease-in duration-260 ${scrolled ? "w-[220px]":"w-[300px] h-[70px]" }`}/>
               <ul className={`flex gap-5 font-[16px] max-md1:hidden ${scrolled ? "text-gray-700" : "text-white" }`}>
                 <li className="hover:text-white cursor-pointer">
-                  Главная
+                  Main
                 </li>
                 <li className="hover:text-amber-700 cursor-pointer">
-                  Меню
+                  Menu
                 </li>
                 <li className="hover:text-amber-700 cursor-pointer">
-                  О компании
+                  About us
                 </li>
                 <li className="hover:text-amber-700 cursor-pointer">
-                  Рестораны
+                  Restaurants
                 </li>
                 <li className="hover:text-amber-700 cursor-pointer">
-                  Контакты
+                  Contacts
                 </li>
               </ul>
         </div>
