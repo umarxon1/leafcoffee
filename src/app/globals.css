@@ -10,6 +10,17 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-sm3: 330px;
+  --breakpoint-sm2: 400px;
+  --breakpoint-sm1: 540px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-md2: 890px;
+  --breakpoint-md1: 960px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-lg1: 1068px;
+  --breakpoint-xl1: 1150px;
+  --breakpoint-xl: 1280px
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +30,15 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0px 20px;
+
 }

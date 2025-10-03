@@ -1,0 +1,25 @@
+"use client";
+
+import { Avatar } from "antd";
+import { StarFilled } from "@ant-design/icons";
+import { Testimonial } from "@/types/type";
+
+export default function TestimonialCard({ t }: { t: Testimonial }) {
+  return (
+    <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col items-center text-center h-full">
+      <div className="-mt-12 mb-3 max-md:mt-0">
+        <Avatar size={96} src={t.img} />
+      </div>
+
+      <div className="mb-2 flex items-center gap-1">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <StarFilled key={i} style={{ color: "#f6b83b" }} />
+        ))}
+      </div>
+
+      <h3 className="text-lg font-semibold mt-1">{t.name}</h3>
+      <p className="text-sm text-gray-500 mb-4">{t.city}</p>
+      <p className="text-gray-700">{t.text}</p>
+    </div>
+  );
+}
