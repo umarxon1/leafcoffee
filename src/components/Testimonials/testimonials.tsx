@@ -6,8 +6,14 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { testimonials } from "@/data/db";
 import TestimonialCard from "./components/testimonialsCard";
 
+type CarouselRefType = {
+  next: () => void;
+  prev: () => void;
+};
+
 export default function Testimonials() {
-  const carouselRef = useRef<any>(null);
+
+  const carouselRef = useRef<CarouselRefType>(null);
 
   return (
     <section className="bg-[#f9f6f1] py-16">
@@ -28,7 +34,7 @@ export default function Testimonials() {
         </div>
 
         <div className="md:hidden relative">
-          <Carousel dots ref={carouselRef}>
+          <Carousel dots ref={carouselRef as any}>
             {testimonials.map((t) => (
               <div key={t.id} className="px-4">
                 <div className="max-w-md mx-auto">
