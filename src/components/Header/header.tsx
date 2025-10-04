@@ -53,16 +53,16 @@ const Header = () => {
                 <li className="hover:text-white cursor-pointer">
                   Main
                 </li>
-                <li className="hover:text-amber-700 cursor-pointer">
+                <li className="hover:text-white cursor-pointer">
                   Menu
                 </li>
-                <li className="hover:text-amber-700 cursor-pointer">
+                <li className="hover:text-white cursor-pointer">
                   About us
                 </li>
-                <li className="hover:text-amber-700 cursor-pointer">
+                <li className="hover:text-white cursor-pointer">
                   Restaurants
                 </li>
-                <li className="hover:text-amber-700 cursor-pointer">
+                <li className="hover:text-white cursor-pointer">
                   Contacts
                 </li>
               </ul>
@@ -72,13 +72,13 @@ const Header = () => {
                <PhoneOutlined style={{fontSize:"26px"}}/> 
              </div>
                 <div className="flex items-center flex-col max-lg1:hidden ">
-                <a href="tel:+998885770077" className={`font-medium text-[16px] text-gray-700 hover:text-white ${scrolled ? "text-gray-700" : "text-white"}`}>+998885770077</a>
+                <a href="tel:+998885770077" className={`font-medium text-[16px] text-gray-700 hover:text-white ${scrolled ? "text-gray-700" : "text-white"}`}>+998 88 577-00-77</a>
                 <span className={`text-[12px] text-gray-700  ${scrolled ? "text-gray-700" : "text-white"}`}>кругластучно 24/7</span>
               </div>
                <div className="hidden max-md1:inline ">
                 <Button
         type="text"
-        icon={<MenuOutlined style={{fontSize:"22px", color: scrolled ? "black" : "white",}} />}
+        icon={<MenuOutlined style={{fontSize:"22px", color: scrolled ? "gray" : "white",}} />}
         onClick={() => setOpen(true)}
       />
        <Drawer

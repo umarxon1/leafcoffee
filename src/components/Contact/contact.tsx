@@ -29,7 +29,7 @@ const Contacts = () => {
   ];
 
   return (
-    <section className="bg-amber-50 py-20">
+    <section className="bg-[#f9f6f1] py-20">
       <div className="max-w-6xl mx-auto px-6">
         {/* Title */}
         <div className="text-center mb-12">
@@ -42,9 +42,7 @@ const Contacts = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Left Side */}
           <div className="space-y-6">
-            {/* Address */}
             <div className="flex items-start gap-4">
               <EnvironmentOutlined className="text-2xl text-amber-600 mt-1" />
               <div>
@@ -58,7 +56,6 @@ const Contacts = () => {
               </div>
             </div>
 
-            {/* Phone */}
             <div className="flex items-start gap-4">
               <PhoneOutlined className="text-2xl text-amber-600 mt-1" />
               <div>
@@ -67,7 +64,6 @@ const Contacts = () => {
               </div>
             </div>
 
-            {/* Email */}
             <div className="flex items-start gap-4">
               <MailOutlined className="text-2xl text-amber-600 mt-1" />
               <div>
@@ -76,7 +72,6 @@ const Contacts = () => {
               </div>
             </div>
 
-            {/* Working Hours */}
             <div className="flex items-start gap-4">
               <ClockCircleOutlined className="text-2xl text-amber-600 mt-1" />
               <div>
@@ -85,14 +80,13 @@ const Contacts = () => {
               </div>
             </div>
 
-            {/* Yandex Map */}
           </div>
             <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-md">
               <YMaps>
                 <Map
                   defaultState={{
                     center: [40.539151, 70.940425],
-                    zoom: 13,
+                    zoom: 7,
                   }}
                   width="100%"
                   height="100%"
@@ -105,7 +99,10 @@ const Contacts = () => {
                         balloonContent: branch.name,
                       }}
                       options={{
-                        preset: "islands#redDotIcon",
+                         iconLayout: "default#image",
+                        iconImageHref: "/logocircle.png",
+                        iconImageSize: [50, 50],
+                        iconImageOffset: [-25, -50],
                       }}
                     />
                   ))}

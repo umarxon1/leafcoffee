@@ -61,9 +61,6 @@ const About = () => {
             </div>
           </div>
 
-          <button className="mt-8 bg-amber-600 hover:bg-amber-700 text-white font-medium px-6 py-3 rounded-lg shadow-md transition">
-            Learn More →
-          </button>
         </div>
       </div>
     </section>

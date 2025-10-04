@@ -7,22 +7,22 @@ export default function ProductGrid() {
   const products = [
     {
       title: "Latte Macchiato",
-      desc: "Smooth & creamy espresso",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rem soluta commodi aut sit distinctio magnam illum nihil enim! Itaque?",
       img: Barista1,
     },
     {
       title: "Cappuccino",
-      desc: "Rich foam with bold espresso",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rem soluta commodi aut sit distinctio magnam illum nihil enim! Itaque?",
       img: Chpkatmosphere,
     },
     {
       title: "Cheesecake",
-      desc: "Freshly baked every morning",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rem soluta commodi aut sit distinctio magnam illum nihil enim! Itaque?",
       img: Cappucino,
     },
     {
       title: "Croissant",
-      desc: "Buttery & flaky perfection",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rem soluta commodi aut sit distinctio magnam illum nihil enim! Itaque?",
       img: Cappucino,
     },
   ];
@@ -40,15 +40,8 @@ export default function ProductGrid() {
           />
           <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white">
             <h2 className="text-3xl font-bold">{p.title}</h2>
-            <p className="mb-4">{p.desc}</p>
-            <div className="space-x-2">
-              <button className="px-4 py-2 bg-white text-black rounded hover:bg-gray-200">
-                Learn More
-              </button>
-              <button className="px-4 py-2 bg-[#C19A6B] text-white rounded hover:bg-[#a17c55]">
-                Order
-              </button>
-            </div>
+            <p className="mb-4 text-center">{p.desc}</p>
+           
           </div>
         </div>
       ))}
