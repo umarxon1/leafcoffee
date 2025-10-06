@@ -1,5 +1,3 @@
-"use client";
-
 import { Carousel } from "antd";
 import { testimonials } from "@/data/db";
 import TestimonialCard from "./components/testimonialsCard";

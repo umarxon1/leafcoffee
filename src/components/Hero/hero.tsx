@@ -1,5 +1,6 @@
 import Image from "next/image";
 import LeafStore from "../../../public/chpkleaf.jpg"
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -15,7 +16,7 @@ export default function Hero() {
         <p className="text-xl mb-6">Premium Coffee & Desserts, made with love</p>
         <div className="space-x-4">
           <button className="px-6 py-3 bg-white text-black rounded-lg hover:bg-[#b5d8d2]">
-            View Menu
+            <Link href={"/menu"}>View Menu</Link>
           </button>
           <button className="px-6 py-3 text-white rounded-lg bg-[#C19A6B] text-white hover:bg-[#a77e52] 
   transition-all duration-300">

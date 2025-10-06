@@ -1,5 +1,3 @@
-"use client";
-
 import { Avatar } from "antd";
 import { StarFilled } from "@ant-design/icons";
 import { Testimonial } from "@/types/type";

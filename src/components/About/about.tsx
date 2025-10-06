@@ -1,5 +1,3 @@
-"use client";
-
 import { TeamOutlined, CoffeeOutlined, HeartOutlined } from "@ant-design/icons";
 import Image from "next/image";
 
