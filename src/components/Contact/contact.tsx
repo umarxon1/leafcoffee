@@ -29,9 +29,8 @@ const Contacts = () => {
   ];
 
   return (
-    <section className="bg-[#f9f6f1] py-20">
+    <section id="restaurants" className="bg-[#f9f6f1] py-20">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Contact Us
@@ -90,6 +89,13 @@ const Contacts = () => {
                   }}
                   width="100%"
                   height="100%"
+                    options={{
+                      suppressMapOpenBlock: true, 
+                      suppressObsoleteBrowserNotifier: true,
+                      copyrightLogoVisible: false, 
+                      copyrightProvidersVisible: false,
+                      copyrightUaVisible: false, 
+                      }}
                 >
                   {branches.map((branch, i) => (
                     <Placemark
@@ -103,6 +109,7 @@ const Contacts = () => {
                         iconImageHref: "/logocircle.png",
                         iconImageSize: [50, 50],
                         iconImageOffset: [-25, -50],
+                        
                       }}
                     />
                   ))}
