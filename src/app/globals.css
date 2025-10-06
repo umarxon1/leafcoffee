@@ -20,7 +20,8 @@
   --breakpoint-lg: 1024px;
   --breakpoint-lg1: 1068px;
   --breakpoint-xl1: 1150px;
-  --breakpoint-xl: 1280px
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1336px
 }
 
 @media (prefers-color-scheme: dark) {
